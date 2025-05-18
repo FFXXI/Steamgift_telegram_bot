@@ -10,8 +10,6 @@ HEADERS={
 }
 
 
-
-
 def get_data(url, headers=HEADERS):
     r = requests.get(url, cookies=get_cookies(), headers=headers)
     soup = BeautifulSoup(r.text, "lxml")

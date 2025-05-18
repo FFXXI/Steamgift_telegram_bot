@@ -14,7 +14,12 @@ def get_cookies():
                 sys.exit(0)
 
     except FileNotFoundError:
-        print(f"Файл cookie.txt не найден. Отключение через {TIME} секунд !!! ")
+        print(f"Файл cookie.txt не найден.")
+        with open("cookie.txt", 'w') as f:
+            print(f"Содаем пустой файл cookie.txt")
+
+        print(f"В файл cookie.txt нужно вставить ваши куки")
+        print(f"Отключение через {TIME} секунд !!!")
         time.sleep(TIME)
         sys.exit(0)
 
