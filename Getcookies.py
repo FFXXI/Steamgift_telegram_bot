@@ -20,6 +20,7 @@ def get_cookies():
 
         print(f"В файл cookie.txt нужно вставить ваши куки")
         print(f"Отключение через {TIME} секунд !!!")
+
         time.sleep(TIME)
         sys.exit(0)
 
